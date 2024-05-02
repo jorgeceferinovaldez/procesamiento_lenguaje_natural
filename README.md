@@ -2,7 +2,7 @@
 
 # Trabajo Práctico Integrador
 
-# Procesamiento Lenguaje Natural
+# Procesamiento de Lenguaje Natural
 ---
 
 ## Alumno:
