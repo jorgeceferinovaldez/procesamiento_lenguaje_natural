@@ -14,25 +14,43 @@
 
 ## Contenido
 
-### Desafío 1
-[**1**. Vectorizar documentos.](desafio_1/desafio_1_Punto_1.ipynb) Tomar 5 documentos al azar y medir similaridad con el resto de los documentos.
-Estudiar los 5 documentos más similares de cada uno analizar si tiene sentido
-la similaridad según el contenido del texto y la etiqueta de clasificación.
+### Desafio 1: Similaridad coseno
+![Similaridad entre vectores](./images/similaridad_coseno.png)
 
-[**2**. Entrenamiento de modelos Niave Bayes.](desafio_1/desafio_1_Punto_2.ipynb) Entrenar modelos de clasificación Naïve Bayes para maximizar el desempeño de clasificación
-(f1-score macro) en el conjunto de datos de test. Considerar cambiar parámteros
-de instanciación del vectorizador y los modelos y probar modelos de Naïve Bayes Multinomial
-y ComplementNB.
+Empleando un dataset en ingles, se midio la similaridad entre los documentos usando la similaridad coseno.
 
-[**3**. Transponer la matriz documento-término.](desafio_1/desafio_1_Punto_3.ipynb) .  De esa manera se obtiene una matriz
-término-documento que puede ser interpretada como una colección de vectorización de palabras.
-Estudiar ahora similaridad entre palabras tomando 5 palabras y estudiando sus 5 más similares.
+### Desafío 2: Embeddings de caracteres y palabras
 
-### [Desafío 2](desafio_2/desafio_2.ipynb) 
+![Embeddings de palabras](./images/words_embeddings.png)
+
+[Embeddings de palabras](desafio_2/desafio_2.ipynb) 
 #### Objetivo
-El objetivo es utilizar documentos / corpus para crear embeddings de palabras basado en ese contexto. Se utilizará canciones de bandas para generar los embeddings, es decir, que los vectores tendrán la forma en función de como esa banda haya utilizado las palabras en sus canciones.
+Empleando como documento un libro escrito en español se generaron embeddings de caracteres y palabras.
 
-- Crear sus propios vectores con Gensim basado en lo visto en clase con otro dataset.
-- Probar términos de interés y explicar similitudes en el espacio de embeddings (sacar conclusiones entre palabras similitudes y diferencias).
-- Graficarlos.
-- Obtener conclusiones.
+### Desafío 3: Tokenización
+
+![Modelo Lenguaje Char](./images/tokenizacion.png)
+
+- [Preprocesamiento de datos](desafio_3/1_preprocesamiento.ipynb) 
+- [Modelo Lenguaje Char](desafio_3/2_modelo_lenguaje_char.ipynb) 
+- [Modelo Lenguaje Word](desafio_3/2_modelo_lenguaje_word.ipynb) 
+
+#### Objetivo
+Empleando como documento un libro escrito en español se generó la tokenización de caractéres y palabras.
+
+### Desafío 4: LSTM Bot QA
+
+![LSTM Bot QA](./images/bot_qa.png)
+
+- [LSTM Bot QA](desafio_4/desafio_4_bot.ipynb) 
+
+#### Objetivo
+Utilizando datos disponibles del challenge ConvAI2 (Conversational Intelligence Challenge 2) de conversaciones en inglés se contruiyó un BOT para responder a preguntas del usuario (QA).
+
+### Desafío 5: Análisis de sentimientos usando Bert
+
+![Sentimientos Bert](./images/analisis_sentimientos.png)
+
+[Bert Sentiment Analysis](desafio_5/desafio_5_bert_sentiment_analysis.ipynb) 
+#### Objetivo
+Empleando el modelo preentrenado de BERR se implemento una clasificación de reviews de aplicaciones basados en los sentimientos de los usuarios.
